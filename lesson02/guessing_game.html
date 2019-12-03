@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript"> 
+    var count = 1
+    var maxAttampts=3
+	var answer = parseInt(Math.random())*100;
+	document.write(answer)
+
+	while (count < maxAttampts){
+		var userAnsver = +prompt('введите число - ')
+		if (answer == userAnsver) {
+			alert('вы угадали '+'c '+count)
+			break;
+
+		}else if (count>3) {
+			alert('fail ')
+			break;
+
+		}
+
+		else if (answer>userAnsver) {
+			alert('ответ меньше загаданного - попытка  ' + count)
+
+		}else {
+			alert('ответ больше загаданного - попытка  ' + count)
+
+		}
+		count++
+	}
+	document.write('использовано '+(count-1)+ '   попыток вы проиграли ')
+
+</script>
