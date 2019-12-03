@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script type="text/javascript"> 
+    
+    var maxAttampts=3
+	var answer = 7;
+	document.write(answer)
+
+	for (var tryCount = 1; tryCount <= maxAttampts; tryCount++) {
+		var userAnsver = +prompt('введите число - попытка  #' + tryCount)
+		if (answer == userAnsver) {
+			alert('вы угадали '+'c '+tryCount)
+		}
+		else if (answer>userAnsver) {
+			alert('ответ меньше загаданного - попытка  ' )
+		}else {
+			alert('ответ больше загаданного - попытка  ')
+		}
+		
+	}
+	if (tryCount==maxAttampts+1) {
+		document.write('использовано '+(tryCount-1)+ '   попыток вы проиграли ')
+	}
+	
+	
+
+</script>
