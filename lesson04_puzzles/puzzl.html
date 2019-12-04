@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+var maxTryCount = 3
+
+for (var tryCount = 1; tryCount <= maxTryCount; tryCount++) {
+	pz = ['слон','bob']
+	var answer = prompt('попытка №'+ tryCount +' введите ответ :')
+	if (answer == pz [0] || pz[1]) {
+		alert('you winner on '+ tryCount +' attempt - game over')
+		break
+	}else {
+		alert('You fail attempt- remain '+ (maxTryCount-tryCount))
+		if (maxTryCount-tryCount == 0) {
+			document.write('number attempt ended you losed !!!!')
+		}
+	}
+}
+
+
+
+</script>
